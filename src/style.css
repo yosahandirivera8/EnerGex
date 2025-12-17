@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+
+
+body{
+  background-image: linear-gradient(to bottom, #622831, #AB1229 );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  
+}
+
+h1{
+  text-align: center;
+  padding: 100px;
+  font-family: 'Italiana', serif;
+  color: white;
+  margin-top: -120px;
+  font-size: 48px;
+}
+
+
+.caffeine{
+  font-family: 'Italiana', serif;
+  padding-left: 200px;
+  color: white;
+}
+
+.sugar{
+  font-family: 'Italiana', serif;
+  padding-left: 200px;
+  color: white;
+}
+
+
+.row {
+  display: flex;
+  gap: 200px; 
+  align-items: center;
+  font-family: 'Italiana', serif;
+  padding-left: 150px;
+  color: white;
+}
+
+.per{
+  font-family: 'Italiana', serif;
+  padding-left: 755px;
+  color: white;
+}
+
+.take{
+  font-family: 'Italiana', serif;
+  margin-left: 755px;
+  width: 150px;
+  height: 70px;
+  font-size: 25px;
+}
+
+.but{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-top: 80px;
+  padding-left: 130px;
+  padding-bottom: 100px;
+  margin-right: 0;
+}
+
+.but button{
+  font-family: 'Italiana', serif;
+  width: 200px;
+  height: 65px;
+  font-size: 25px;
+  border-radius: 20px;
+}
+
+
+.off-screen{
+  background-color: #A16D6D;
+  height: 100vh;
+  width: 100%;
+  max-width: 450px;
+ position: fixed;
+  top: 0px;
+  right: -450px;
+  font-family: 'Italiana', serif;
+  color: white;
+  transition: .3s ease;
+  z-index: 1000;
+}
+
+.off-screen h2{
+  font-size: 55px;
+  margin-top: 50px;
+  margin-left: 50px;
+  
+}
+.off-screen p{
+  margin-left: 50px;
+  font-size: 25px;
+}
+.off-screen.active{
+  right: 0;
+}
+
+nav{
+  padding: 1rem;
+  display: flex;
+  z-index: 1001;
+}
+.ham-menu{
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  position: relative;
+  z-index: 1000;
+}
+.ham-menu span{
+  height: 5px;
+  width: 100%;
+  background-color: white;
+  border-radius: 25px;
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(-44deg);
+  transition: .3s ease;
+}
+.ham-menu span:nth-child(1){
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(1deg);
+  
+}
+
+.ham-menu span:nth-child(2){
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(1deg);
+}
+.ham-menu span:nth-child(3){
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(1deg);
+}
+
+.ham-menu.active span:nth-child(1){
+  top: 50%;
+  transform: translate(-50%, 50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2){
+  opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3){
+  top: 60%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+
+.caff {
+  display: flex;
+  gap: 420px; 
+  align-items: center;
+  font-family: 'Italiana', serif;
+  padding-left: 200px;
+  color: white;
+}
+
+.age{
+  font-family: 'Italiana', serif;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.sug{
+  font-family: 'Italiana', serif;
+  color: white;
+  margin-left: 200px;
+}
+
+.sug p{
+  font-family: 'Italiana', serif;
+  margin-left: 10px;
+  color: white;
+}
+
+.grams{
+  font-family: 'Italiana', serif;
+  color: white;
+  margin-top: -40px;
+  margin-left: 650px;
+}
+
+.drink-preview-card {
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  z-index: 1;
+  position: absolute;   
+  right: 80px;
+  top: 170px;
+}
+
+.drink-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #5a0f1b;
+}
+
+.info{
+  color: white;
+  font-family: 'Italiana', serif;
+  margin-left: 200px;
+}
+
+.info-container {
+  display: flex;
+  gap: 300px; 
+  align-items: center;
+  font-family: 'Italiana', serif;
+  padding-left: 200px;
+  color: white;
+}
+
+
+.texts input {
+  padding: 5px;
+  margin-left: 200px;
+  font-family: 'Italiana', serif;
+}
+
+
+
+.glass-ctr{
+  width: 320px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass{
+  width: 320px;
+  height: 300px;
+  background-color: rgb(255,255,255);
+  position: absolute;
+  -webkit-clip-path: polygon(0 0,100% 0, 90% 100%, 10% 100%);
+  clip-path: polygon(0 0,100% 0, 90% 100%, 10% 100%);
+}
+
+.water-ctr{
+  top:-10px;
+  width: 250px;
+  height: 400px;
+  overflow: hidden;
+  background-color: rgba(255, 226, 128, 0.5);
+  -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+  position: relative;
+}
+
+.water{
+  width: 5000px;
+  height: 900px;
+  top:400px;
+  background-image: url(https://www.basementpumpsltd.co.uk/wp-content/themes/basement/images/waves.png);
+  background-repeat: repeat;
+  background-size: contain;
+  position: relative;
+  /*animation: mymove 10s;
+  animation-fill-mode: forwards;*/
+  transition: top 0.3s ease, right 0.3s ease;
+  z-index: 1;
+}
+
+@keyframes mymove{
+  0%{right: 0; top: 10px;}
+  100%{right: 3400px; top: -200px;}
+}
+
+.slider{
+  margin-left: 200px;
+  width: 525px;
+  -webkit-appearance: none;
+  background: #D9D9D9;
+  opacity: 0.7;
+  transition: opacity .2s;
+  border-radius: 10px;
+}
+
+.slider::-webkit-slider-thumb{
+  -webkit-appearance:none;
+  appearance: none;
+  width: 20px;
+  height: 25px;
+  background: #AC9090;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.slider::-moz-range-thumb{
+  width: 20px;
+  height: 20px;
+  background: #AC9090;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.flavor-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 200px;
+  padding-right: 270px;
+  margin-top: 30px;
+}
+
+.column h3 {
+  color: white;
+  font-family: 'Italiana', serif;
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.column > div {
+  font-family: 'Italiana', serif;
+  font-size: 25px;
+  color: white;
+  margin-bottom: 15px;
+  align-items: left;
+}
+
+.column input[type='checkbox'] {
+  accent-color: #46D841;
+  margin-right: 6px;
+  waidth: 20px;
+  height: 20px;
+}
+
+
+@media screen and (max-width: 768px){
+  h1 {
+    padding: 50px 20px;
+    font-size: 36px;
+    margin-top: -50px;
+  }
+  
+  .info{
+    padding-left: 20px;
+    margin-left: 0;
+  }
+ 
+  
+  .info-container h3{
+    padding-left: 20px;
+    margin-left: -200px;
+  }
+  
+  .info-container {
+  display: flex;
+  gap: 326px;
+  padding-left: 200px;
+}
+
+  .texts input {
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .caffeine {
+    padding-left: 20px;
+    margin-left: 20px;
+  }
+  
+  .slider {
+    margin-left: 20px;
+    width: calc(100% - 40px);
+  }
+  
+  .caff {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 0;
+  }
+  
+  .caff p {
+    margin: 0;
+  }
+  
+  .sugar {
+    padding-left: 20px;
+    margin-left: 20px;
+  }
+  
+  .sug {
+    margin-left: 20px;
+    display: inline-block;
+  }
+  
+  .grams {
+    margin-left: 355px;
+    display: inline-block;
+    padding-right: 20px;
+  }
+
+  .flavor-options {
+    grid-template-columns: 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 30px;
+  }
+
+  .but {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 15px;
+    align-items: stretch;
+  }
+  
+  .but button {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .drink-preview-card {
+    position: relative;
+    right: 20px;
+    left: 20px;
+    top: 20px;
+    margin: 30px 40px;
+  }
+  
+  .off-screen {
+    max-width: 80%;
+    right: -80%;
+  }
+  
+  .off-screen.active {
+    right: 0;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+    padding: 30px 15px;
+  }
+  
+  .info, .caffeine, .sugar {
+    padding-left: 15px;
+    margin-left: 15px;
+    font-size: 20px;
+    
+  }
+  
+  .age, .texts input {
+    margin-left: 15px;
+    width: calc(100% - 30px);
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .slider {
+    margin-left: 15px;
+    width: calc(100% - 30px);
+  }
+  
+  .caff, .sug {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+  }
+  
+  .grams {
+    padding-right: 15px;
+    font-size: 16px;
+  }
+  
+  .flavor-options {
+    padding: 0 15px;
+  }
+  
+  
+  .column h3 {
+    font-size: 20px;
+  }
+  
+  .column > div {
+    font-size: 18px;
+    align-items: left;
+  }
+  
+  
+  .but {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .but button {
+    font-size: 20px;
+    height: 55px;
+  }
+  
+  .drink-preview-card {
+    margin: 15px 15px;
+    width: calc(100% - 10px);
+    padding: 20px;
+  }
+  
+  .drink-title {
+    font-size: 20px;
+  }
+  
+  .glass-ctr, .glass {
+    width: 100%;
+    height: 250px;
+  }
+  
+  .water-ctr {
+    width: 70%;
+  }
+  
+  .off-screen {
+    max-width: 100%;
+    right: -100%;
+  }
+  
+  .off-screen h1 {
+    font-size: 40px;
+  }
+  
+  .off-screen p {
+    margin-left: 30px;
+    font-size: 22px;
+  }
+}
+
+

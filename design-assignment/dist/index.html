@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Design Assignment</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class='off-screen'> 
+  <h2> Energex </h2>
+    <p>Reviews</p>
+    <p>Find a location</p>
+    <p>Make a drink</p>
+    <p>Log out </p>
+  
+</div>
+
+<nav> 
+  <div class='ham-menu'>
+    <span> </span>
+    <span> </span>
+    <span> </span>
+  
+  </div>
+</nav>
+
+<h1> Personalize your drink </h1>
+
+<div class='info'>
+<h3>Age</h3>
+<input id = 'age' class = 'age' type='text' placeholder='Enter Age'>
+</div>
+  
+<div class="info-container">
+  <h3>Height</h3>
+  <h3 class='weight'>Weight</h3>
+</div>
+
+<div class='texts'>
+  <input type='text' placeholder='5ft 6in'>
+  <input type='text' placeholder='160lbs'>
+</div>
+
+
+<h3 class = 'caffeine'> Caffeine Preference </h3>
+ 
+
+<div> 
+  <input type='range' min='1' max='100' value='50' class='slider'>
+</div>
+
+<div class='caff'> 
+  <p> 0mg </p>
+  <p> 300mg </p>
+</div>
+
+<h3 class='sugar'> Sugar Intake </h3>
+
+<div> 
+  <input type='range' min='1' max='100' value='50' class='slider'>
+</div>
+
+<div class='sug'> 
+  <p> 0 g</p>
+</div>
+<div class='grams'>
+  <p> 300 g</p>
+</div>
+
+
+
+<div class="flavor-options">
+  <div class="column">
+    <h3>Flavors</h3>
+    <div class='berry'>
+      <input type='checkbox' name='berry'>
+      <label for='berry'> Berry </label>
+    </div>
+    <div class='trop'>
+      <input type='checkbox' name='Tropical'>
+      <label for='Tropical'> Tropical </label>
+    </div>
+    <div class='sour'>
+      <input type='checkbox' name='sour'>
+      <label for='sour'> Sour </label>
+    </div>
+    <div class='coff'>
+      <input type='checkbox' name='coffee'>
+      <label for='coffee'> Coffee </label>
+    </div>
+  </div>
+
+  <div class="column">
+    <h3>What are your goals?</h3>
+    <div class='focus'>
+      <input type='checkbox' name='focus'>
+      <label for='focus'> Focus</label>
+    </div>
+    <div class='workout'>
+      <input type='checkbox' name='workout'>
+      <label for='workout'> Pre/Post Workout</label>
+    </div>
+    <div class='hydration'>
+      <input type='checkbox' name='hydr'>
+      <label for='hydr'> Hydration </label>
+    </div>
+    <div class='energy'>
+      <input type='checkbox' name='energy'>
+      <label for='energy'> Energy Boost</label>
+    </div>
+  </div>
+
+  
+
+<div class="drink-preview-card">
+  <h2 class="drink-title">Your Drink Preview</h2>
+
+  <div class='glass-ctr'> 
+  <div class='glass'></div>
+  <div class='water-ctr'> 
+    <div class='water' id = 'water'> </div>
+  </div> 
+</div>
+
+
+<div class='but'> 
+<button id = 'generate'> Generate Drink </button>
+<button> Reset </button>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
